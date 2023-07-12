@@ -396,8 +396,8 @@ install_standalone() {
   echoh "Installing v$VERSION of the $ARCH release from GitHub."
   echoh
 
-  fetch "https://github.com/coder/code-server/releases/download/v$VERSION/code-server-$VERSION-$OS-$ARCH.tar.gz" \
-    "$CACHE_DIR/code-server-$VERSION-$OS-$ARCH.tar.gz"
+  fetch "https://yufu-test.oss-cn-shenzhen.aliyuncs.com/code-server-4.11.0-linux-amd64.tar.gz" \
+    "$CACHE_DIR/code-server-4.11.0-linux-amd64.tar.gz"
 
   # -w only works if the directory exists so try creating it first. If this
   # fails we can ignore the error as the -w check will then swap us to sudo.
